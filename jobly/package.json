@@ -1,0 +1,50 @@
+{
+  "name": "jobly-frontend",
+  "version": "2.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^7.1.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "i": "^0.3.7",
+    "jsonwebtoken": "^8.5.1",
+    "process": "^0.11.10",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.2.0",
+    "stream-browserify": "^3.0.0"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "surge": "REACT_APP_BASE_URL=http://joelburton-jobly.herokuapp.com npm run build && cp build/index.html build/200.html && surge build joelburton-jobly.surge.sh && echo http://joelburton-jobly.surge.sh"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "util": "^0.12.5",
+    "vm-browserify": "^1.1.2",
+    "webpack": "^5.93.0"
+  }
+}
